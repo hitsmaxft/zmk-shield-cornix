@@ -1,6 +1,6 @@
 # ZMK Keyboard Cornix
 
-This shield has been tested with Cornix using ZMK and provides full split-role configuration, battery power management, and Bluetooth central/peripheral setup per ZMK split guidelines 
+This project has been tested with Cornix using ZMK and provides full split-role configuration, battery power management, and Bluetooth central/peripheral setup per ZMK split guidelines 
 
 
 ![image](images/cornix_with_dongle.png)
@@ -9,7 +9,7 @@ This shield has been tested with Cornix using ZMK and provides full split-role c
 ## TODO LIST
 
 - [x] 52 keys full layout keymap, since v2.0
-- [x] ec11 encoder, since v2.2
+- [x] ec11 encoder, since v2.2,but cornix-left works since 2.6.1
 - [x] no-SD image, since v2.3
 - [ ] rgb
 
