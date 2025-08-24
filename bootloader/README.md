@@ -1,6 +1,9 @@
-### 软设备恢复说明（中文）
+### 软设备恢复说明（中文）（过期文档）
 
 由于原RMK固件移除了SoftDevice，在刷入ZMK固件之前，必须先恢复SoftDevice：
+
+> 注意， zmk 支持 no-sd 模式， 也就是和 rmk 一样， 把 sd 分区去掉（sd 区块从原来的150kb+ 减少到 4kb大小）
+> 目前 cornix zmk 固件已经改成 no-sd flash 布局， 不再需要恢复 sd 
 
 1. **先用SoftDevice恢复包刷入**，地址：[bootloader/s140_restore.uf2](./s140_6.1.1_restore_no_mbr.uf2)
 2. **Recovery模式进入方法**：双击RESET键进入bootloader
