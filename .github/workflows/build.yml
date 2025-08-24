@@ -48,10 +48,10 @@ jobs:
       - name: Generate PNG
         run: |
           # Use 5x times density for bigger PNG, by default is 96
-          convert -density 480 ./keymap-drawer/corneish_zen.svg ./keymap-drawer/corneish_zen.png
+          convert -density 480 ./keymap-drawer/cornix.svg ./keymap-drawer/cornix.png
           echo "git status"
           git status
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(png): auto-create png image"
-          file_pattern: "keymap-drawer/corneish_zen.png"
+          file_pattern: "keymap-drawer/cornix.png"
