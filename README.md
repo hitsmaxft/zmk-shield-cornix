@@ -11,10 +11,10 @@ This project has been tested with Cornix using ZMK and provides full split-role 
 - [x] 52 keys full layout keymap, since v2.0
 - [x] ec11 encoder, since v2.2,but cornix-left works since 2.6.1
 - [x] no-SD image, since v2.3
-- [ ] rgb
+- [ ] rgb indicator
 
 
-### about RGB
+### about RGB indicators
 
 Cornix shield has 2 RGB LEDs on each side, controled by PWM in the stock firmware.
 
