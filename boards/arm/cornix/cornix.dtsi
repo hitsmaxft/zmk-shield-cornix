@@ -25,17 +25,15 @@
 };
 
 &spi1 {
-    status = "disabled";
-
+    status = "okay";
     compatible = "nordic,nrf-spim";
 
-
-        pinctrl-0 = <&spi1_default>;
-        pinctrl-1 = <&spi1_sleep>;
-        pinctrl-names = "default", "sleep";
+    pinctrl-0 = <&spi1_default>;
+    pinctrl-1 = <&spi1_sleep>;
+    pinctrl-names = "default", "sleep";
 
     led_strip: ws2812@0 {
-        status = "disabled";
+        status = "okay";
         compatible = "worldsemi,ws2812-spi";
 
         /* SPI */
@@ -53,26 +51,14 @@
 
 
 / {
-    // rgb_underglow: rgb_underglow {
-    //     status = "okay";
-    //     compatible = "zmk,rgb-underglow";
-    //     label = "RGB";
-    //     chain-length = <2>;
-    //     brightness = <60>;
-    //     effect = "breathing";
-    // };
     soft_off_wakers {
         compatible = "zmk,soft-off-wakeup-sources";
         wakeup-sources = <&kscan0>;
     };
 
-    aliases {
-        status-ws2812 = &led_strip;
-    };
     chosen {
         zmk,bttery = &vbatt;
 		// widget,rgb = &led_strip;
-		// zmk,underglow = &led_strip;
     };
 
 };

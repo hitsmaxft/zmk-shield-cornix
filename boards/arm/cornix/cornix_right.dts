@@ -30,6 +30,7 @@
 &default_transform {
 	col-offset = <7>;
 };
+
 // rgb,SPI
 &pinctrl {
     spi1_default: spi1_default {
@@ -52,8 +53,9 @@
 };
 
 / {
+    //hardcoding label for ext_power behavior
     EXT_POWER {
-        status = "disabled";
+        status = "okay";
         compatible = "zmk,ext-power-generic";
         control-gpios = <&gpio0 24 GPIO_ACTIVE_HIGH>;
         init-delay-ms = <50>;
